@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fbc-test-413
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/shebert-tenant/fbc-example/fbc-test-413@sha256:ddf9dc0b5798abd79797008c07153836322bb0d7a4a4b7cdc1ab4bd6976cccb2
+        name: container-image
+        resources: {}
+status: {}
