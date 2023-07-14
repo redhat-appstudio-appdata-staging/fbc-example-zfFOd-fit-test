@@ -23,7 +23,8 @@ spec:
         app.kubernetes.io/instance: fbc-test-413
     spec:
       containers:
-      - imagePullPolicy: Always
+      - image: quay.io/redhat-user-workloads-stage/shebert-tenant/fbc-example/fbc-test-413@sha256:ddf9dc0b5798abd79797008c07153836322bb0d7a4a4b7cdc1ab4bd6976cccb2
+        imagePullPolicy: Always
         livenessProbe:
           httpGet:
             path: /
